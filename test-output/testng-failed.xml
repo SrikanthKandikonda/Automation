@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="50" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="50" parallel="tests" name="FormCreator2.0 TestScripts (Default Staging Version) Test Run 4(failed)">
+    <parameter name="Email" value="formcreatorteam@a-cti.com"/>
+    <parameter name="SessionId" value="4"/>
+    <parameter name="URL" value="https://formcreator.full.io"/>
+    <parameter name="Password" value="fctest@1234"/>
+    <parameter name="AccountNumber" value="1221234567"/>
+    <classes>
+      <class name="io.testscripts.fc2.o.FormVersionsTestScripts">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="verifyFormVersionsPage" invocation-numbers="0"/>
+          <include name="setupExtentReport"/>
+          <include name="BrowserLaunch"/>
+          <include name="reload"/>
+          <include name="extentReport"/>
+        </methods>
+      </class> <!-- io.testscripts.fc2.o.FormVersionsTestScripts -->
+      <class name="io.testscripts.fc2.o.SpanishScriptingTestScripts">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="setupExtentReport"/>
+          <include name="BrowserLaunch"/>
+          <include name="verifySpanishScripting" invocation-numbers="0"/>
+          <include name="reload"/>
+          <include name="extentReport"/>
+        </methods>
+      </class> <!-- io.testscripts.fc2.o.SpanishScriptingTestScripts -->
+    </classes>
+  </test> <!-- FormCreator2.0 TestScripts (Default Staging Version) Test Run 4(failed) -->
+  <test thread-count="50" parallel="tests" name="FormCreator2.0 TestScripts (Default Staging Version) Test Run 3(failed)">
+    <parameter name="Email" value="formcreatorteam@a-cti.com"/>
+    <parameter name="UkAccountNumber" value="02038683769"/>
+    <parameter name="SessionId" value="3"/>
+    <parameter name="URL" value="https://formcreator.full.io"/>
+    <parameter name="Password" value="fctest@1234"/>
+    <parameter name="AccountNumber" value="1301234567"/>
+    <classes>
+      <class name="io.testscripts.fc2.o.CutAndPasteFieldsTestScripts">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="reload"/>
+          <include name="setupExtentReport"/>
+          <include name="BrowserLaunch"/>
+          <include name="extentReport"/>
+          <include name="verifyFieldsEdit" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- io.testscripts.fc2.o.CutAndPasteFieldsTestScripts -->
+    </classes>
+  </test> <!-- FormCreator2.0 TestScripts (Default Staging Version) Test Run 3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
