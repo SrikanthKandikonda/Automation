@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="50" parallel="tests"  preserve-order="true">
+ <test thread-count="50" name="FormCreator2.0 TestScripts (Default Staging Version) Test Run 1" preserve-order="true">
+  <parameter name="URL" value="https://vr-dot-staging-formcreator.appspot.com" />
+   <parameter name="Email" value="formcreatorteam@a-cti.com" />
+    <parameter name="Password" value="fctest@1234" />
+  <parameter name="AccountNumber" value="9223300448" />
+  <parameter name="UniquePin" value="a9418e97-81d9-42bb-bcec-12f4a88e3e2d" />
+  <parameter name="SessionId" value="1"></parameter>
+    <classes>
+      <class name="io.testscripts.fc2.o.GoogleSignInTestScripts"/>
+       <class name = "io.testscripts.fc2.o.StaffTestScripts"/>
+        <class name = "io.testscripts.fc2.o.AddingAndDeletingFieldsTestScripts"/>
+         <class name = "io.testscripts.fc2.o.FindByUniquePinTestScripts"/>
+         <class name = "io.testscripts.fc2.o.ScheduleBatchMessagesTestScripts"/>
+          <class name = "io.testscripts.fc2.o.ScheduleBehaviourTestScripts"/>
+    </classes>
+  </test> <!-- FormCreatorTestScripts(Default Staging Version) -->
+  
+  <test thread-count="50" name="FormCreator2.0 TestScripts (Default Staging Version) Test Run 2" preserve-order="true">
+  <parameter name="URL" value="https://vr-dot-staging-formcreator.appspot.com" />
+   <parameter name="Email" value="formcreatorteam@a-cti.com" />
+    <parameter name="Password" value="fctest@1234" />
+  <parameter name="AccountNumber" value="8222224142" />
+   <parameter name="DifferentAccount" value="8000120133" />
+  <parameter name="SessionId" value="2"></parameter>
+    <classes>
+      <class name="io.testscripts.fc2.o.GoogleSignInTestScripts"/>
+      <class name = "io.testscripts.fc2.o.CopyAccountTemplateTestScripts"/>
+       <class name = "io.testscripts.fc2.o.AddingAndDeletingUserTemplatesTestScripts"/>
+       <class name = "io.testscripts.fc2.o.ImportScriptTestScripts"/>
+    </classes>
+  </test> <!-- FormCreatorTestScripts(Default Staging Version) -->
+  
+  <test thread-count="50" name="FormCreator2.0 TestScripts (Default Staging Version) Test Run 3" preserve-order="true">
+  <parameter name="URL" value="https://vr-dot-staging-formcreator.appspot.com" />
+   <parameter name="Email" value="formcreatorteam@a-cti.com" />
+    <parameter name="Password" value="fctest@1234" />
+  <parameter name="AccountNumber" value="8773527610" />
+  <parameter name="SessionId" value="3"></parameter>
+    <classes>
+      <class name="io.testscripts.fc2.o.GoogleSignInTestScripts"/>
+       <class name = "io.testscripts.fc2.o.AccountDetailsTestScripts"/>
+       <class name = "io.testscripts.fc2.o.ScenariosTestScripts"/>
+         <class name = "io.testscripts.fc2.o.CutAndPasteFieldsTestScripts"/>
+         <class name = "io.testscripts.fc2.o.CopyAndPasteFieldsTestScripts"/>
+         <class name = "io.testscripts.fc2.o.HolidayScriptingTestScripts"/>
+    </classes>
+  </test> <!-- FormCreatorTestScripts(Default Staging Version) -->
+  
+  <test thread-count="50" name="FormCreator2.0 TestScripts (Default Staging Version) Test Run 4" preserve-order="true">
+  <parameter name="URL" value="https://vr-dot-staging-formcreator.appspot.com" />
+   <parameter name="Email" value="formcreatorteam@a-cti.com" />
+    <parameter name="Password" value="fctest@1234" />
+  <parameter name="AccountNumber" value="9794284957" />
+  <parameter name="SessionId" value="4"></parameter>
+    <classes>
+      <class name="io.testscripts.fc2.o.GoogleSignInTestScripts"/>
+       <class name = "io.testscripts.fc2.o.ClearCacheTestScripts"/>
+        <class name = "io.testscripts.fc2.o.BusinessHoursAndClosuresTestScripts"/>
+         <class name = "io.testscripts.fc2.o.SpanishScriptingTestScripts"/>
+          <class name = "io.testscripts.fc2.o.FormVersionsTestScripts"/>
+    </classes>
+  </test> <!-- FormCreatorTestScripts(Default Staging Version) -->
+</suite> <!-- Suite -->
